@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="row">
+	<div class="col-md-12">
+	<h3>CONTACT US PAGE</h3>
+	<p>Get us on facebook today and learn computer programming.. 
+	<button class="btn btn-primary" id="contact_get">Read More</button>
+	<br>
+	<span id="span" class="text-success" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	</span>
+</p>
+	</div>
+</div>
+<script type="text/javascript" src="static/js/jquery-3.5.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#contact_get').on('click', function(){
+			$('#span').slideToggle();
+			$(this).hide();
+		});
+	});
+</script>
+
+{% endblock %}

@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.html" %}
+{% block content %}
 
-<head>
-	<title>About | ShinyProxy Flask Demo</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+<h3>ABOUT US PAGE</h3>
+<p>Something about us..</p>
 
-<body>
-	<h1>About page!</h1>
-	<a href="{{ url_for('home') }}">Home</a>
-	<br>
-	<br>
-	<img width="400px" src="{{ url_for('static', filename='logo.png') }}">
-	<br>
-	<br>
-	<div id="message"></div>
-
-	<script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-
-</html>
+{% endblock %}
